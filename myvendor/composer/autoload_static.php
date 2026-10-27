@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0fdacd54c0d93f3cc04dc55498ad4a6e
+class ComposerStaticInitElwikiupgrade
 {
     public static $prefixLengthsPsr4 = array (
         's' => 
@@ -14,7 +14,7 @@ class ComposerStaticInit0fdacd54c0d93f3cc04dc55498ad4a6e
         ),
         'd' => 
         array (
-            'dokuwiki\\plugin\\upgrade\\HTTP\\' => 29,
+            'dokuwiki\\plugin\\elwikiupgrade\\HTTP\\' => 35,
         ),
     );
 
@@ -27,7 +27,7 @@ class ComposerStaticInit0fdacd54c0d93f3cc04dc55498ad4a6e
         array (
             0 => __DIR__ . '/..' . '/splitbrain/php-archive/src',
         ),
-        'dokuwiki\\plugin\\upgrade\\HTTP\\' => 
+        'dokuwiki\\plugin\\elwikiupgrade\\HTTP\\' => 
         array (
             0 => __DIR__ . '/../..' . '/HTTP',
         ),
@@ -35,15 +35,15 @@ class ComposerStaticInit0fdacd54c0d93f3cc04dc55498ad4a6e
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'helper_plugin_upgrade' => __DIR__ . '/../..' . '/helper.php',
+        'helper_plugin_elwikiupgrade' => __DIR__ . '/../..' . '/helper.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0fdacd54c0d93f3cc04dc55498ad4a6e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0fdacd54c0d93f3cc04dc55498ad4a6e::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit0fdacd54c0d93f3cc04dc55498ad4a6e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitElwikiupgrade::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitElwikiupgrade::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitElwikiupgrade::$classMap;
 
         }, null, ClassLoader::class);
     }

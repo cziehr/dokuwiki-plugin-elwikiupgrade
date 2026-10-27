@@ -1,17 +1,17 @@
 <?php
 
 /**
- * DokuWiki Plugin upgrade (Helper Component)
+ * DokuWiki Plugin elwikiupgrade (Helper Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author  Andreas Gohr <andi@splitbrain.org>
  */
 
-use dokuwiki\plugin\upgrade\HTTP\DokuHTTPClient;
+use dokuwiki\plugin\elwikiupgrade\HTTP\DokuHTTPClient;
 use splitbrain\PHPArchive\FileInfo;
 use splitbrain\PHPArchive\Tar;
 
-class helper_plugin_upgrade extends DokuWiki_Plugin
+class helper_plugin_elwikiupgrade extends DokuWiki_Plugin
 {
     /** @var string download URL for the new DokuWiki release */
     public $tgzurl;
@@ -26,7 +26,7 @@ class helper_plugin_upgrade extends DokuWiki_Plugin
     /** @var string URL to the plugin.info.txt file of the upgrade plugin */
     public $pluginversion;
 
-    /** @var admin_plugin_upgrade|cli_plugin_upgrade */
+    /** @var admin_plugin_elwikiupgrade|cli_plugin_elwikiupgrade */
     protected $logger;
 
     public function __construct()
@@ -36,15 +36,15 @@ class helper_plugin_upgrade extends DokuWiki_Plugin
         $branch = 'stable';
 
         $this->tgzurl = "https://github.com/splitbrain/dokuwiki/archive/$branch.tar.gz";
-        $this->tgzfile = $conf['tmpdir'] . '/dokuwiki-upgrade.tgz';
-        $this->tgzdir = $conf['tmpdir'] . '/dokuwiki-upgrade/';
+        $this->tgzfile = $conf['tmpdir'] . '/dokuwiki-elwikiupgrade.tgz';
+        $this->tgzdir = $conf['tmpdir'] . '/dokuwiki-elwikiupgrade/';
         $this->tgzversion = "https://raw.githubusercontent.com/splitbrain/dokuwiki/$branch/VERSION";
         $this->composer = "https://raw.githubusercontent.com/splitbrain/dokuwiki/$branch/composer.json";
         $this->pluginversion = "https://raw.githubusercontent.com/splitbrain/dokuwiki-plugin-upgrade/master/plugin.info.txt";
     }
 
     /**
-     * @param admin_plugin_upgrade|cli_plugin_upgrade $logger Logger object
+     * @param admin_plugin_elwikiupgrade|cli_plugin_elwikiupgrade $logger Logger object
      * @return void
      */
     public function setLogger($logger)

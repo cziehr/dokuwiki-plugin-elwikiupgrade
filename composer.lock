@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0fdacd54c0d93f3cc04dc55498ad4a6e",
+    "content-hash": "d1111a85ccde9198a46a75d03d1379b7",
     "packages": [
         {
             "name": "splitbrain/php-archive",

@@ -7,12 +7,12 @@ use splitbrain\phpcli\Options;
 require_once __DIR__ . '/myvendor/autoload.php';
 
 /**
- * DokuWiki Plugin upgrade (CLI Component)
+ * DokuWiki Plugin elwikiupgrade (CLI Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author  Andreas Gohr <andi@splitbrain.org>
  */
-class cli_plugin_upgrade extends DokuWiki_CLI_Plugin
+class cli_plugin_elwikiupgrade extends DokuWiki_CLI_Plugin
 {
     protected $logdefault = 'notice';
     protected $helper;
@@ -23,7 +23,7 @@ class cli_plugin_upgrade extends DokuWiki_CLI_Plugin
     public function __construct()
     {
         parent::__construct();
-        $this->helper = new helper_plugin_upgrade();
+        $this->helper = new helper_plugin_elwikiupgrade();
         $this->helper->setLogger($this);
     }
 
@@ -76,6 +76,6 @@ class cli_plugin_upgrade extends DokuWiki_CLI_Plugin
 
 // run the script ourselves if called directly
 if (basename($_SERVER['SCRIPT_NAME']) == 'cli.php') {
-    $cli = new cli_plugin_upgrade();
+    $cli = new cli_plugin_elwikiupgrade();
     $cli->run();
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace dokuwiki\plugin\upgrade\HTTP;
+namespace dokuwiki\plugin\elwikiupgrade\HTTP;
 
 if(!defined('HTTP_NL')) define('HTTP_NL',"\r\n");
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace dokuwiki\plugin\upgrade\HTTP;
+namespace dokuwiki\plugin\elwikiupgrade\HTTP;
 
 use Exception;
 

@@ -19,4 +19,4 @@ if (PHP_VERSION_ID < 50600) {
 
 require_once __DIR__ . '/composer/autoload_real.php';
 
-return ComposerAutoloaderInit0fdacd54c0d93f3cc04dc55498ad4a6e::getLoader();
+return ComposerAutoloaderInitElwikiupgrade::getLoader();

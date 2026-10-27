@@ -1,17 +1,18 @@
 {
-    "name": "splitbrain/dokuwiki-plugin-upgrade",
-    "description": "The DokuWiki upgrade plugin",
+    "name": "cziehr/dokuwiki-plugin-elwikiupgrade",
+    "description": "The DokuWiki elwikiupgrade plugin (fork of the DokuWiki upgrade plugin)",
     "type": "project",
     "license": "GPLv2",
     "config": {
         "platform": {
             "php": "7.2"
         },
-        "vendor-dir": "myvendor"
+        "vendor-dir": "myvendor",
+        "autoloader-suffix": "Elwikiupgrade"
     },
     "autoload": {
         "psr-4": {
-            "dokuwiki\\plugin\\upgrade\\HTTP\\": "HTTP/"
+            "dokuwiki\\plugin\\elwikiupgrade\\HTTP\\": "HTTP/"
         },
         "classmap": [
             "helper.php"

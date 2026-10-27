@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'helper_plugin_upgrade' => $baseDir . '/helper.php',
+    'helper_plugin_elwikiupgrade' => $baseDir . '/helper.php',
 );

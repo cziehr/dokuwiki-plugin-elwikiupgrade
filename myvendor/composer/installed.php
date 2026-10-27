@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'splitbrain/dokuwiki-plugin-upgrade',
+        'name' => 'cziehr/dokuwiki-plugin-elwikiupgrade',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
         'reference' => '12ddee6afb2df28dc2ec5fb9a27ae467ad616cce',
@@ -10,7 +10,7 @@
         'dev' => true,
     ),
     'versions' => array(
-        'splitbrain/dokuwiki-plugin-upgrade' => array(
+        'cziehr/dokuwiki-plugin-elwikiupgrade' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
             'reference' => '12ddee6afb2df28dc2ec5fb9a27ae467ad616cce',

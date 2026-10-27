@@ -1,7 +1,7 @@
 <?php
 
 /**
- * DokuWiki Plugin upgrade (Admin Component)
+ * DokuWiki Plugin elwikiupgrade (Admin Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author  Andreas Gohr <andi@splitbrain.org>
@@ -9,11 +9,11 @@
 
 require_once __DIR__ . '/myvendor/autoload.php';
 
-class admin_plugin_upgrade extends DokuWiki_Admin_Plugin
+class admin_plugin_elwikiupgrade extends DokuWiki_Admin_Plugin
 {
     protected $haderrors = false;
 
-    /** @var helper_plugin_upgrade */
+    /** @var helper_plugin_elwikiupgrade */
     protected $helper;
 
     /**
@@ -21,7 +21,7 @@ class admin_plugin_upgrade extends DokuWiki_Admin_Plugin
      */
     public function __construct()
     {
-        $this->helper = plugin_load('helper', 'upgrade');
+        $this->helper = plugin_load('helper', 'elwikiupgrade');
         $this->helper->setLogger($this);
     }
 
@@ -47,12 +47,12 @@ class admin_plugin_upgrade extends DokuWiki_Admin_Plugin
 
         echo '<h1>' . $this->getLang('menu') . '</h1>';
 
-        echo '<div id="plugin__upgrade">';
+        echo '<div id="plugin__elwikiupgrade">';
         // enable auto scroll
         ?>
         <script type="text/javascript">
-            var plugin_upgrade = window.setInterval(function () {
-                var obj = document.getElementById('plugin__upgrade');
+            var plugin_elwikiupgrade = window.setInterval(function () {
+                var obj = document.getElementById('plugin__elwikiupgrade');
                 if (obj) obj.scrollTop = obj.scrollHeight;
             }, 25);
         </script>
@@ -65,7 +65,7 @@ class admin_plugin_upgrade extends DokuWiki_Admin_Plugin
         ?>
         <script type="text/javascript">
             window.setTimeout(function () {
-                window.clearInterval(plugin_upgrade);
+                window.clearInterval(plugin_elwikiupgrade);
             }, 50);
         </script>
         <?php
@@ -73,14 +73,14 @@ class admin_plugin_upgrade extends DokuWiki_Admin_Plugin
 
         $careful = '';
         if (!$ok) {
-            echo '<div id="plugin__upgrade_careful">' . $this->getLang('careful') . '</div>';
+            echo '<div id="plugin__elwikiupgrade_careful">' . $this->getLang('careful') . '</div>';
             $careful = 'careful';
         }
 
         $action = script();
-        echo '<form action="' . $action . '" method="post" id="plugin__upgrade_form">';
+        echo '<form action="' . $action . '" method="post" id="plugin__elwikiupgrade_form">';
         echo '<input type="hidden" name="do" value="admin" />';
-        echo '<input type="hidden" name="page" value="upgrade" />';
+        echo '<input type="hidden" name="page" value="elwikiupgrade" />';
         echo '<input type="hidden" name="sectok" value="' . getSecurityToken() . '" />';
         if ($next) {
             echo '<button type="submit"
@@ -114,7 +114,7 @@ class admin_plugin_upgrade extends DokuWiki_Admin_Plugin
         $active = true;
         $count = 0;
 
-        echo '<div id="plugin__upgrade_meter"><ol>';
+        echo '<div id="plugin__elwikiupgrade_meter"><ol>';
         foreach ($steps as $step) {
             $count++;
             if ($step == $next) $active = false;

@@ -1,58 +1,58 @@
-#plugin__upgrade {
+#plugin__elwikiupgrade {
     margin: 0 auto;
     height: 20em;
     overflow: auto;
 }
 
-#plugin__upgrade .log-error::before {
+#plugin__elwikiupgrade .log-error::before {
     content: "✗ ";
     color: #f00;
 }
-#plugin__upgrade .log-warning::before {
+#plugin__elwikiupgrade .log-warning::before {
     content: "⚠ ";
     color: #f90;
 }
-#plugin__upgrade .log-notice::before {
+#plugin__elwikiupgrade .log-notice::before {
     content: "☛ ";
     color: #ccc;
 }
 
-#plugin__upgrade_form {
+#plugin__elwikiupgrade_form {
     display: block;
     overflow: auto;
     margin: 1em;
     font-size: 120%;
 }
 
-#plugin__upgrade_careful {
+#plugin__elwikiupgrade_careful {
     float: right;
     text-align: right;
     margin-right: 1em;
     color: red;
 }
 
-#plugin__upgrade_form {
+#plugin__elwikiupgrade_form {
     clear: right;
 }
 
-#plugin__upgrade_form button {
+#plugin__elwikiupgrade_form button {
     float: right;
     margin-left: 0.5em;
 }
 
-#plugin__upgrade_form button.careful {
+#plugin__elwikiupgrade_form button.careful {
     opacity: 0.5;
 }
 
 /* based on http://cssdeck.com/labs/progress-bar */
 
-#plugin__upgrade_meter {
+#plugin__elwikiupgrade_meter {
     height: 20px;
     position: relative;
     margin: 3em 1em 1em 1em;
 }
 
-#plugin__upgrade_meter ol {
+#plugin__elwikiupgrade_meter ol {
     margin: 0;
     padding: 0;
     display: block;
@@ -62,7 +62,7 @@
     position: relative;
     list-style: none;
 }
-#plugin__upgrade_meter ol li {
+#plugin__elwikiupgrade_meter ol li {
     float: left;
     margin: 0;
     padding: 0;
@@ -72,12 +72,12 @@
     border-radius: 10px;
 }
 
-#plugin__upgrade_meter ol li span{
+#plugin__elwikiupgrade_meter ol li span{
     right:-0.5em;
     display: block;
     text-align: center;
 }
-#plugin__upgrade_meter ol li .step {
+#plugin__elwikiupgrade_meter ol li .step {
     top: -0.4em;
     padding: .2em 0;
     border: 3px solid #ddd;
@@ -90,21 +90,21 @@
     background-color: #fff;
     border-radius: 50%;
 }
-#plugin__upgrade_meter ol li .stage {
+#plugin__elwikiupgrade_meter ol li .stage {
     color: #fff;
     font-weight: 700;
 }
 
-#plugin__upgrade_meter ol li.active {
+#plugin__elwikiupgrade_meter ol li.active {
     height: 20px;
     background: #aaa;
 }
 
-#plugin__upgrade_meter ol li.active span.stage {
+#plugin__elwikiupgrade_meter ol li.active span.stage {
     color: #000;
 }
 
-#plugin__upgrade_meter ol li.active span.step{
+#plugin__elwikiupgrade_meter ol li.active span.step{
     color: #000;
     border: 3px solid __link__;
 }

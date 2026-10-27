@@ -1,13 +1,13 @@
 <?php
 
-namespace dokuwiki\plugin\upgrade\test;
+namespace dokuwiki\plugin\elwikiupgrade\test;
 
 use DokuWikiTest;
 
 /**
  * General tests for the upgrade plugin
  *
- * @group plugin_upgrade
+ * @group plugin_elwikiupgrade
  * @group plugins
  */
 class GeneralTest extends DokuWikiTest
@@ -31,7 +31,7 @@ class GeneralTest extends DokuWikiTest
         $this->assertArrayHasKey('desc', $info);
         $this->assertArrayHasKey('url', $info);
 
-        $this->assertEquals('upgrade', $info['base']);
+        $this->assertEquals('elwikiupgrade', $info['base']);
         $this->assertRegExp('/^https?:\/\//', $info['url']);
         $this->assertTrue(mail_isvalid($info['email']));
         $this->assertRegExp('/^\d\d\d\d-\d\d-\d\d$/', $info['date']);
@@ -61,7 +61,7 @@ class GeneralTest extends DokuWikiTest
         $this->assertEquals(
             gettype($conf),
             gettype($meta),
-            'Both ' . DOKU_PLUGIN . 'upgrade/conf/default.php and ' . DOKU_PLUGIN . 'upgrade/conf/metadata.php have to exist and contain the same keys.'
+            'Both ' . DOKU_PLUGIN . 'elwikiupgrade/conf/default.php and ' . DOKU_PLUGIN . 'elwikiupgrade/conf/metadata.php have to exist and contain the same keys.'
         );
 
         if ($conf !== null && $meta !== null) {
@@ -69,7 +69,7 @@ class GeneralTest extends DokuWikiTest
                 $this->assertArrayHasKey(
                     $key,
                     $meta,
-                    'Key $meta[\'' . $key . '\'] missing in ' . DOKU_PLUGIN . 'upgrade/conf/metadata.php'
+                    'Key $meta[\'' . $key . '\'] missing in ' . DOKU_PLUGIN . 'elwikiupgrade/conf/metadata.php'
                 );
             }
 
@@ -77,7 +77,7 @@ class GeneralTest extends DokuWikiTest
                 $this->assertArrayHasKey(
                     $key,
                     $conf,
-                    'Key $conf[\'' . $key . '\'] missing in ' . DOKU_PLUGIN . 'upgrade/conf/default.php'
+                    'Key $conf[\'' . $key . '\'] missing in ' . DOKU_PLUGIN . 'elwikiupgrade/conf/default.php'
                 );
             }
         }

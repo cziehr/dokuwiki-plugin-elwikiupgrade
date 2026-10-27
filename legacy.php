@@ -94,7 +94,7 @@ class Doku_Event
     }
 }
 
-trait UpgradePluginTrait
+trait ElwikiupgradePluginTrait
 {
     protected $lang = null;
 
@@ -124,14 +124,14 @@ trait UpgradePluginTrait
 
 abstract class DokuWiki_CLI_Plugin extends splitbrain\phpcli\CLI
 {
-    use UpgradePluginTrait;
+    use ElwikiupgradePluginTrait;
 }
 
 class DokuWiki_Plugin
 {
-    use UpgradePluginTrait;
+    use ElwikiupgradePluginTrait;
 }
 
 // now the CLI plugin should load and run
 include(__DIR__ . '/cli.php');
-(new cli_plugin_upgrade())->run();
+(new cli_plugin_elwikiupgrade())->run();

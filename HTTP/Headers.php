@@ -1,6 +1,6 @@
 <?php
 
-namespace dokuwiki\plugin\upgrade\HTTP;
+namespace dokuwiki\plugin\elwikiupgrade\HTTP;
 
 /**
  * Utilities to send HTTP Headers

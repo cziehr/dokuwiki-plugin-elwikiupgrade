@@ -3,10 +3,10 @@
 /**
  * Version parsing tests for the upgrade plugin
  *
- * @group plugin_upgrade
+ * @group plugin_elwikiupgrade
  * @group plugins
  */
-class version_plugin_upgrade_test extends DokuWikiTest
+class version_plugin_elwikiupgrade_test extends DokuWikiTest
 {
     /**
      * @return array
@@ -31,7 +31,7 @@ class version_plugin_upgrade_test extends DokuWikiTest
      */
     public function testVersions($version, $expected)
     {
-        $plugin = new helper_plugin_upgrade();
+        $plugin = new helper_plugin_elwikiupgrade();
 
         $result = $this->callInaccessibleMethod($plugin, 'dateFromVersion', [$version]);
         $this->assertSame($expected, $result);
