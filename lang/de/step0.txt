@@ -1,7 +1,7 @@
-Dieses Plugin aktualisiert ihr Wiki automatisch auf die aktuelle DokuWiki Version. Bevor Sie fortsetzen, sollten Sie den[[doku>changes|Änderungsverlauf]] lesen und überprüfen, ob vor oder nach der Aktualisierung weitere Schritte notwendig sind.
+Dieses Plugin aktualisiert ihr Einsatzleiterwiki automatisch auf die aktuelle Version, und zwar sowohl die Wiki-Software als auch die enthaltenen Daten. Inhalte, welche Sie im lokalen Bereich abgelegt haben, werden bei der Aktualisierung nicht angetastet.
 
-Damit die automatische Aktualisierung möglich ist, sollte der PHP Prozess auf die DokuWiki Dateien zugreifen können. Das Plugin überprüft die erforderlichen Dateiberechtigungen, bevor der Aktualisierungsprozess startet.
+Sollten Sie selbst weitere DokuWiki-Plugins installiert haben, deaktivieren Sie diese bitte zuerst bevor Sie fortfahren. Ihr Wiki könnte sonst unzugänglich werden und es könnte eine Fehlerbehebung notwendig werden, bevor das Wiki wieder startet. Nach Abschluss der Aktualisierung können Sie Ihre Plugins wieder aktivieren.
 
-Dieses Plugin aktualisiert nur den DokuWiki-Kern und keine installierten Plugins oder Vorlagen. Inkompatibilitäten mit Erweiterungen von Drittanbietern sind die häufigste Ursache für Probleme nach einer Aktualisierung. Es wird empfohlen, **alle nicht benötigten Plugins von Drittanbietern zu deaktivieren**, bevor Sie die Aktualisierung durchführen.
+Damit die automatische Aktualisierung möglich ist, muss der PHP Prozess auf die Wiki-Dateien zugreifen können. Dies sollte normalerweise der Fall sein, wenn Sie keine Anpassungen der Datei- oder Verzeichnisrechte vorgenommen haben. Das Plugin überprüft die erforderlichen Dateiberechtigungen, bevor der Aktualisierungsprozess startet.
 
-Wir empfehlen eine Sicherung ihres Wikis zu erstellen, bevor Sie fortsetzen.
+Sie sollten unbedingt eine [[https://www.einsatzleiterwiki.de/doku.php?id=hilfe:administration:datensicherung|Sicherung ihres Wikis erstellen]], bevor Sie fortsetzen.

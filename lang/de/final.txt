@@ -1,7 +1,3 @@
 Ihr Wiki wurde aktualisiert.
 
-Aktualisieren Sie nun Ihre deaktivierten Plugins und Vorlagen, bevor Sie sie einzeln wieder aktivieren. Sollten Probleme auftreten, hat das [[https://forum.dokuwiki.org/|Benutzerforum]] möglicherweise Tipps für Sie.
-
-Wenn Ihnen DokuWiki und dieses Plugin gefallen, unterstützen Sie die Entwicklung dieses und anderer Plugins gerne mit einer [[doku>donate|Spende]]. Besuchen Sie auch unsere verschiedenen [[doku>social|sozialen Netzwerke]], um über neue Entwicklungen auf dem Laufenden zu bleiben.
-
-Viel Spaß mit [[:|Ihrem neuen DokuWiki]]! :-)
+Aktualisieren Sie nun Ihre deaktivierten Plugins, bevor Sie sie einzeln wieder aktivieren. Sollten Probleme auftreten, hat der [[https://einsatzleiterwiki.de/doku.php?id=hilfe:start|Hilfe-Bereich]] möglicherweise Tipps für Sie.
