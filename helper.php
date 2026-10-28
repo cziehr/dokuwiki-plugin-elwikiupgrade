@@ -35,12 +35,12 @@ class helper_plugin_elwikiupgrade extends DokuWiki_Plugin
 
         $branch = 'stable';
 
-        $this->tgzurl = "https://github.com/splitbrain/dokuwiki/archive/$branch.tar.gz";
+        $this->tgzurl = "https://download.einsatzleiterwiki.de/elwikiupgrade/einsatzleiterwiki-upgrade.tar.gz";
         $this->tgzfile = $conf['tmpdir'] . '/dokuwiki-elwikiupgrade.tgz';
         $this->tgzdir = $conf['tmpdir'] . '/dokuwiki-elwikiupgrade/';
-        $this->tgzversion = "https://raw.githubusercontent.com/splitbrain/dokuwiki/$branch/VERSION";
-        $this->composer = "https://raw.githubusercontent.com/splitbrain/dokuwiki/$branch/composer.json";
-        $this->pluginversion = "https://raw.githubusercontent.com/splitbrain/dokuwiki-plugin-upgrade/master/plugin.info.txt";
+        $this->tgzversion = "https://download.einsatzleiterwiki.de/elwikiupgrade/VERSION";
+        $this->composer = "https://download.einsatzleiterwiki.de/elwikiupgrade/composer.json";
+        $this->pluginversion = "https://raw.githubusercontent.com/cziehr/dokuwiki-plugin-elwikiupgrade/master/plugin.info.txt";
     }
 
     /**
