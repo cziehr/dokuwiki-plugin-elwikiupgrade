@@ -1,7 +1,7 @@
 base   elwikiupgrade
 author Christoph Ziehr
 email  info@einsatzleiterwiki.de
-date   2026-10-27
+date   2026-10-30
 name   Einsatzleiterwiki Upgrade Plugin
 desc   Automatically upgrade your DokuWiki install to the most recent stable release
 url    http://www.dokuwiki.org/plugin:upgrade
