@@ -117,9 +117,11 @@ class helper_plugin_elwikiupgrade extends DokuWiki_Plugin
 
         // check if PHP is up to date
         $json = $http->get($this->composer);
-        $data = json_decode($json, true);
-        $minphp = $data['config']['platform']['php'];
-        if (version_compare(phpversion(), $minphp, '<')) {
+        $data = $json ? json_decode($json, true) : null;
+        $minphp = $data['config']['platform']['php'] ?? null;
+        if ($minphp === null) {
+            $this->log('warning', $this->getLang('vs_phpno'));
+        } elseif (version_compare(phpversion(), $minphp, '<')) {
             $this->log('error', $this->getLang('vs_php'), $minphp, phpversion());
             $ok = false;
         }

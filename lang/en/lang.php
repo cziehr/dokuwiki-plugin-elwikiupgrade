@@ -10,6 +10,7 @@ $lang['menu'] = 'Wiki Upgrade';
 
 // custom language strings for the plugin
 $lang['vs_php']     = 'New DokuWiki releases need at least PHP %s, but you\'re running %s. You should upgrade your PHP version before upgrading!';
+$lang['vs_phpno']   = 'Could not determine the minimum PHP version required by the new release.';
 $lang['vs_tgzno']   = 'Could not determine the newest version of DokuWiki.';
 $lang['vs_tgz']     = 'DokuWiki <b>%s</b> is available for download.';
 $lang['vs_local']   = 'You\'re currently running DokuWiki <b>%s</b>.';

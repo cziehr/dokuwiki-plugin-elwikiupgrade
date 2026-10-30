@@ -12,6 +12,7 @@
  */
 $lang['menu']                  = 'Einsatzleiterwiki aktualisieren';
 $lang['vs_php']                = 'Neue Einsatzleiterwiki-Versionen benötigen mindestens PHP-Version %s. Ihre Version ist %d. Bitte aktualisieren Sie PHP bevor Sie das Einsatzleiterwiki aktualisieren. Weitere Hinweise finden Sie im Hilfe-Bereich unter <b>Aktualisierung</b>.';
+$lang['vs_phpno']              = 'Die für die neue Einsatzleiterwiki-Version erforderliche PHP-Version konnte nicht ermittelt werden.';
 $lang['vs_tgzno']              = 'Die neuste Version von Einsatzleiterwiki konnte nicht ermittelt werden.';
 $lang['vs_tgz']                = 'Einsatzleiterwiki <b>%s</b> steht zum Download bereit.';
 $lang['vs_local']              = 'Ihre Einsatzleiterwiki-Version ist <b>%s</b>';
